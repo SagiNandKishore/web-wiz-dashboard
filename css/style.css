@@ -1,3 +1,13 @@
 .navbar-custom-content{
     background-color: #21B6A8;
 }
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.img-float-left{
+    float:left;
+}
