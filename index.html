@@ -7,39 +7,59 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel = "stylesheet" type="text/css" href="css/style.css"
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+<body style="background-color:#D3D3D3">
+        <nav class="navbar navbar-expand-lg navbar-light  bg-light justify-content-between">
 
-        <div class="navbar-header">    
-            <a class="navbar-brand navbar-custom-content" href="./index.html"><strong>Latitude</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Max Temperature</a>
-                        <a class="dropdown-item" href="#">Humidity</a>
-                        <a class="dropdown-item" href="#">Cloudiness</a>
-                        <a class="dropdown-item" href="#">Wind Speed</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./visualization.html">Comparison</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./data.html">Data</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
+            <div class="navbar-header">    
+                <a class="navbar-brand navbar-custom-content bg-info" href="./index.html"><strong>Latitude</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Max Temperature</a>
+                            <a class="dropdown-item" href="#">Humidity</a>
+                            <a class="dropdown-item" href="#">Cloudiness</a>
+                            <a class="dropdown-item" href="#">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./visualization.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     <div class="container-fluid">
-    
+        <div class = "card-deck mt-5 ml-2 mr-2 mb-5">
+            <div class="card">
+                <h4 class="card-title text-info">Summary: Latitude vs. X</h4>
+                <p class="card-text">This project primarily dealt with visualizing the weather pattern of 500+ 
+                    cities across the world of varying distance from the equator. To accomplish this 
+                    I utilized the OpenWeatherMap API (OWM API). The OWM API needs the 
+                    Latitude and Longitude coordinates of the cities which were obtained from citipy module. 
+                    The citipy module is python implementation of the citipi API.
+                </p>
+                <p class="card-text">
+                    After the data was assembled, I used Matplotlib to generate various visualizations. The details
+                    of these analysis and the visualizations can be referenced in indivdual links.
+                </p>
+            </div>
+
+            <div class = "card">
+                <h4>container 2</h4>
+            </div>
+
+
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
